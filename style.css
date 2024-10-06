@@ -1,3 +1,4 @@
+/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,38 +6,212 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #000;
-    color: #00ff00;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    background-color: #0d0d0d; /* Dark background */
+    color: #00ff00; /* Neon green text for code-like feel */
     line-height: 1.6;
-}
-
-header {
-    text-align: center;
     padding: 20px;
 }
 
-h1 {
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
     font-size: 3em;
     margin-bottom: 10px;
+    color: #00ff00;
 }
 
-h2 {
-    font-size: 2em;
-    margin-top: 20px;
+header p {
+    font-size: 1.5em;
+    color: #9b9b9b; /* Slightly lighter color for subtitle */
 }
 
+/* Section styling */
 section {
     margin: 20px auto;
     max-width: 800px;
 }
 
-ul {
-    list-style-type: none;
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00ff00;
+    border-bottom: 2px solid #00ff00;
+    padding-bottom: 10px;
 }
 
+/* Text link styling */
+a {
+    color: #00ff00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #009900;
+}
+
+/* About section */
+#about p {
+    font-size: 1.2em;
+    color: #bfbfbf; /* Slightly muted color for body text */
+    line-height: 1.8;
+}
+
+/* Projects section */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+ul li strong {
+    color: #00ff00;
+}
+
+ul li a {
+    font-size: 1.1em;
+    color: #00ff00;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #009900;
+    text-decoration: underline;
+}
+
+/* Button styles for "Try it out" or "View code" links */
+button {
+    background-color: #00ff00;
+    color: #0d0d0d;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #009900;
+    color: #fff;
+}
+
+/* Contact section */
 footer {
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    color: #bfbfbf;
+    font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    
+    header p {
+        font-size: 1.2em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    ul li {
+        font-size: 1em;
+    }
+}
+
+/* Adding some animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Skill Progress Bars */
+.skill-bar {
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.skill-bar .fill {
+    height: 100%;
+    width: 90%; /* Adjust width based on skill level */
+    background-color: #00ff00;
+}
+
+/* Hover effects for project items */
+.project:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Dark mode toggle button */
+#mode-toggle {
+    background-color: #333;
+    color: #00ff00;
+    padding: 10px 20px;
+    border: 2px solid #00ff00;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#mode-toggle:hover {
+    background-color: #00ff00;
+    color: #0d0d0d;
+}
+
+/* Light mode styles (for dark mode toggle) */
+body.light-mode {
+    background-color: #fff;
+    color: #0d0d0d;
+}
+
+body.light-mode header h1, 
+body.light-mode section h2,
+body.light-mode a, 
+body.light-mode ul li strong {
+    color: #0d0d0d;
+}
+
+body.light-mode footer p {
+    color: #333;
+}
+
+body.light-mode #mode-toggle {
+    background-color: #fff;
+    color: #0d0d0d;
+    border-color: #0d0d0d;
+}
+
+body.light-mode #mode-toggle:hover {
+    background-color: #0d0d0d;
+    color: #fff;
 }
