@@ -101,8 +101,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Tesseract-style wireframe (4D cube projection into 3D)
         var tesseract = new THREE.Group();
-        var innerGeo = new THREE.BoxGeometry(2.4, 2.4, 2.4);
-        var outerGeo = new THREE.BoxGeometry(4, 4, 4);
+        var innerGeo = new THREE.BoxGeometry(2.8, 2.8, 2.8);
+        var outerGeo = new THREE.BoxGeometry(4.6, 4.6, 4.6);
         var tesseractMat = new THREE.LineBasicMaterial({ color: 0x22c55e, transparent: true, opacity: 0.45 });
 
         var innerWire = new THREE.LineSegments(new THREE.EdgesGeometry(innerGeo), tesseractMat);
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var connectors = new THREE.LineSegments(connectorGeom, connectorMat);
         tesseract.add(connectors);
 
-        tesseract.position.set(0, 0, -1.5);
+        tesseract.position.set(0, 0, -2.2);
         scene.add(tesseract);
 
         function onResize() {
@@ -153,18 +153,18 @@ document.addEventListener('DOMContentLoaded', function() {
             var t = clock.getElapsedTime();
 
             cubes.forEach(function (cube, index) {
-                var speed = 0.15 + index * 0.02;
+                var speed = 0.09 + index * 0.015;
                 cube.rotation.x = t * speed;
                 cube.rotation.y = t * (speed * 1.2);
-                cube.position.z = Math.sin(t * 0.6 + index) * 1.4;
+                cube.position.z = Math.sin(t * 0.4 + index) * 1.2;
             });
 
             wireFrame.rotation.x = Math.sin(t * 0.15) * 0.25;
             wireFrame.rotation.y = Math.cos(t * 0.1) * 0.25;
 
-            tesseract.rotation.x = t * 0.22;
-            tesseract.rotation.y = t * 0.31;
-            tesseract.rotation.z = Math.sin(t * 0.18) * 0.4;
+            tesseract.rotation.x = t * 0.13;
+            tesseract.rotation.y = t * 0.17;
+            tesseract.rotation.z = Math.sin(t * 0.12) * 0.35;
 
             renderer.render(scene, camera);
         }
