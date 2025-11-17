@@ -46,6 +46,30 @@ document.addEventListener('DOMContentLoaded', function() {
             stagger: 0.12,
             ease: 'power2.out'
         });
+
+        var skillCards = document.querySelectorAll('.skill-group');
+        skillCards.forEach(function (card) {
+            card.addEventListener('mouseenter', function () {
+                gsap.to(card, {
+                    scale: 1.02,
+                    duration: 0.15,
+                    ease: 'power2.out'
+                });
+            });
+
+            card.addEventListener('mouseleave', function () {
+                gsap.to(card, {
+                    scale: 1,
+                    duration: 0.2,
+                    ease: 'power2.out'
+                });
+            });
+
+            card.addEventListener('click', function () {
+                skillCards.forEach(function (c) { c.classList.remove('is-active'); });
+                card.classList.add('is-active');
+            });
+        });
     }
 
     // Three.js hacker-themed background
