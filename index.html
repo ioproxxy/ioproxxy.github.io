@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ishmael Nyunya Otieno | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
 <body>
-    <header class="site-header">
+    <header class="site-header" data-aos="fade-down">
         <div class="container nav-container">
             <div class="brand">
                 <span class="brand-name">Ishmael Nyunya Otieno</span>
@@ -23,13 +24,15 @@
     </header>
 
     <main>
-        <section class="hero" id="top">
+        <section class="hero" id="top" data-aos="fade-up">
             <div class="container hero-content">
                 <div>
                     <h1>Designing reliable systems & data-driven applications.</h1>
+                    <p class="hero-subtitle"><span id="hero-typed"></span></p>
                     <p>
-                        I specialize in Linux systems, full stack web development, and data science &mdash; building
-                        scalable solutions that turn data into actionable insights and robust applications.
+                        I specialize in Linux systems engineering, full stack application development, and data science,
+                        delivering secure, scalable platforms that turn data into intuitive, business-ready digital
+                        experiences.
                     </p>
                     <div class="hero-actions">
                         <a href="#projects" class="btn primary-btn">View Projects</a>
@@ -39,20 +42,23 @@
             </div>
         </section>
 
-        <section id="about" class="section">
+        <section id="about" class="section" data-aos="fade-up">
             <div class="container">
                 <h2>About Me</h2>
                 <p>
-                    I’m a seasoned professional with a passion for data science, application development, and
-                    automation. With over 10 years of experience, I’ve built scalable solutions that transform
-                    raw data into actionable insights and modern web applications using contemporary tech stacks.
-                    Whether it’s crafting full-stack applications or deploying machine learning models, I thrive at
-                    the intersection of data and technology.
+                    I am the Founder and CEO of Sahoo Technologies Limited
+                    (<a href="https://sahootechnologies.com" target="_blank" rel="noopener">sahootechnologies.com</a>),
+                    where I lead the design and delivery of technology solutions for businesses and organizations.
+                    With over 10 years of experience across Linux systems engineering, full stack development, and
+                    data science, I focus on building secure, scalable, and data-driven platforms that solve
+                    real-world problems.
+                    My work spans end-to-end solution architecture—from infrastructure and backend services to
+                    user-facing applications and analytical workflows.
                 </p>
             </div>
         </section>
 
-        <section id="skills" class="section">
+        <section id="skills" class="section" data-aos="fade-up">
             <div class="container">
                 <h2>Skills</h2>
                 <div class="skills-grid">
@@ -88,7 +94,7 @@
             </div>
         </section>
 
-        <section id="projects" class="section">
+        <section id="projects" class="section" data-aos="fade-up">
             <div class="container">
                 <h2>Projects</h2>
                 <p>Selected work from my portfolio, focused on practical web applications and online platforms.</p>
@@ -150,7 +156,7 @@
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact" class="section" data-aos="fade-up">
             <div class="container contact-section">
                 <h2>Contact</h2>
                 <p>
@@ -161,12 +167,15 @@
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" data-aos="fade-up">
         <div class="container">
             <p>&copy; <span id="year"></span> Ishmael Nyunya Otieno. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
