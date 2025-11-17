@@ -3,54 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishmael's Portfolio</title>
+    <title>Ishmael Nyunya Otieno | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Ishmael Nyunya Otieno</h1>
-        <p>Linux System Admin | Full Stack Developer | Data Scientist</p>
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="brand">
+                <span class="brand-name">Ishmael Nyunya Otieno</span>
+                <span class="brand-title">Linux System Admin · Full Stack Developer · Data Scientist</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <header>
+    <main>
+        <section class="hero" id="top">
+            <div class="container hero-content">
+                <div>
+                    <h1>Designing reliable systems & data-driven applications.</h1>
+                    <p>
+                        I specialize in Linux systems, full stack web development, and data science &mdash; building
+                        scalable solutions that turn data into actionable insights and robust applications.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn primary-btn">View Projects</a>
+                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I’m a seasoned professional with a passion for data science, app development, and automation. With over 10 years of experience, I’ve built scalable solutions that turn data into actionable insights and dynamic web apps using modern tech stacks.
-        Whether it’s crafting full-stack applications or deploying machine learning models, I thrive at the intersection of data and technology.
-    </p>
-</section>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    I’m a seasoned professional with a passion for data science, application development, and
+                    automation. With over 10 years of experience, I’ve built scalable solutions that transform
+                    raw data into actionable insights and modern web applications using contemporary tech stacks.
+                    Whether it’s crafting full-stack applications or deploying machine learning models, I thrive at
+                    the intersection of data and technology.
+                </p>
+            </div>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Linux System Administration</li>
-            <li>Full Stack Development (Python, PHP)</li>
-            <li>JavaScript, HTML5, CSS3</li>
-            <li>Data Science & Machine Learning (pandas, scikit-learn, TensorFlow)</li>
-        </ul>
-    </section>
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h3>Systems &amp; Infrastructure</h3>
+                        <ul>
+                            <li>Linux System Administration</li>
+                            <li>Shell scripting &amp; automation</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Backend &amp; APIs</h3>
+                        <ul>
+                            <li>Python, Django</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>HTML5, CSS3</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Data Science &amp; Machine Learning</h3>
+                        <ul>
+                            <li>pandas, NumPy</li>
+                            <li>scikit-learn, TensorFlow</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Check out some of the projects I've worked on:</p>
-        <ul>
-  <li>
-    <strong>Project 1</strong> – 
-    <a href="https://solar-ecommerce-kaizoku89.replit.app/" target="_blank">
-      A full-stack web application built with Python/Django
-    </a>
-  </li>
-  <li><strong>Project 2</strong> – A PHP-based e-commerce website.</li>
-  <li><strong>Project 3</strong> – A Machine Learning model for predicting customer churn using pandas and scikit-learn.</li>
-  <li><strong>Project 4</strong> – A data analysis tool leveraging pandas for data wrangling and visualization.</li>
-</ul>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <p>Selected work from my portfolio, focused on practical web applications and online platforms.</p>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>Mkulima Express</h3>
+                        <p>
+                            An online platform for showcasing and accessing agricultural products and services.
+                        </p>
+                        <p class="project-meta">Web Application</p>
+                        <a href="https://mkulima-express.vercel.app/" target="_blank" rel="noopener" class="project-link">View Live</a>
+                    </article>
 
-    </section>
+                    <article class="project-card">
+                        <h3>Sahas Express</h3>
+                        <p>
+                            A web-based application designed to streamline access to services and information.
+                        </p>
+                        <p class="project-meta">Web Application</p>
+                        <a href="https://sahasexpress-vavek.sevalla.app/" target="_blank" rel="noopener" class="project-link">View Live</a>
+                    </article>
 
-    <footer>
-        <p>Contact: ishmael.oro@hotmail.com</p>
+                    <article class="project-card">
+                        <h3>Duka Express</h3>
+                        <p>
+                            An e-commerce style experience for exploring and interacting with store offerings online.
+                        </p>
+                        <p class="project-meta">Web Application · E-commerce</p>
+                        <a href="https://dukaexpress.vercel.app/" target="_blank" rel="noopener" class="project-link">View Live</a>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Mental Wellness Works</h3>
+                        <p>
+                            A content-driven site focused on mental health, wellness resources, and supportive material.
+                        </p>
+                        <p class="project-meta">Content Platform</p>
+                        <a href="https://mentalwellnessworks.wordpress.com/" target="_blank" rel="noopener" class="project-link">View Live</a>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Planet Lanet Express</h3>
+                        <p>
+                            A web application providing an online presence and interaction point for a local business.
+                        </p>
+                        <p class="project-meta">Web Application</p>
+                        <a href="https://planet-lanetexpress.onrender.com/" target="_blank" rel="noopener" class="project-link">View Live</a>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Karibu Store Nai</h3>
+                        <p>
+                            An online storefront experience showcasing retail products for customers in Nairobi.
+                        </p>
+                        <p class="project-meta">Web Application · Storefront</p>
+                        <a href="https://karibu-store-nai.lovable.app/" target="_blank" rel="noopener" class="project-link">View Live</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-section">
+                <h2>Contact</h2>
+                <p>
+                    For opportunities or collaborations, feel free to reach out via email.
+                </p>
+                <a href="mailto:ishmael.oro@hotmail.com" class="contact-email">ishmael.oro@hotmail.com</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Ishmael Nyunya Otieno. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="app.js"></script>
